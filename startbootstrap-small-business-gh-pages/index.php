@@ -22,10 +22,10 @@
             <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <div class="col-lg-7">
-                    <video class="img-fluid rounded mb-4 mb-lg-0"
+                    <video class="w-100 rounded mb-4 mb-lg-0"
                            controls
                            preload="metadata"
-                           poster="assets/preview.jpg">
+                           poster="assets/640x360image.jpg">
 
                         <source src="assets/videoprueba.mp4" type="video/mp4">
                     </video>
@@ -45,43 +45,7 @@
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-8">
-                        <div id="disqus_thread">
-                            <script>
-                                /**
-                                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT
-                                 *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR
-                                 *  PLATFORM OR CMS.
-                                 *
-                                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:
-                                 *  https://disqus.com/admin/universalcode/#configuration-variables
-                                 */
-                                /*
-                                var disqus_config = function () {
-                                    // Replace PAGE_URL with your page's canonical URL variable
-                                    this.page.url = PAGE_URL;
-
-                                    // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                                    this.page.identifier = PAGE_IDENTIFIER;
-                                };
-                                */
-
-                                (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-                                    var d = document, s = d.createElement('script');
-
-                                    // IMPORTANT: Replace EXAMPLE with your forum shortname!
-                                    s.src = 'https://cybernetikeinhearjar.disqus.com/embed.js';
-
-                                    s.setAttribute('data-timestamp', +new Date());
-                                    (d.head || d.body).appendChild(s);
-                                })();
-                            </script>
-                            <noscript>
-                                Please enable JavaScript to view the
-                                <a href="https://disqus.com/?ref_noscript" rel="nofollow">
-                                    comments powered by Disqus.
-                                </a>
-                            </noscript>
-                        </div>
+                        <div id="disqus_thread"></div>
                     </div>
                 </div>
             </div>
@@ -95,6 +59,47 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-    <script id="dsq-count-scr" src="//cybernetikeinhearjar.disqus.com/count.js" async></script>
+
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT
+         *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR
+         *  PLATFORM OR CMS.
+         *
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:
+         *  https://disqus.com/admin/universalcode/#configuration-variables
+         */
+        /*
+        var disqus_config = function () {
+            // Replace PAGE_URL with your page's canonical URL variable
+            this.page.url = PAGE_URL;
+
+            // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            this.page.identifier = PAGE_IDENTIFIER;
+        };
+        */
+        var disqus_config = function () {
+            this.page.url = "https://cybernetikeinhearjar.disqus.com/demo";
+            this.page.identifier = "pagina-demo";
+        };
+
+        (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+            var d = document, s = d.createElement('script');
+
+            // IMPORTANT: Replace EXAMPLE with your forum shortname!
+            s.src = 'https://cybernetikeinhearjar.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        </script>
+    <noscript>
+        Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+            comments powered by Disqus.
+        </a>
+    </noscript>
+
+    
     </body>
 </html>
