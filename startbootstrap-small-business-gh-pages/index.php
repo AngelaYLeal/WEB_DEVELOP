@@ -99,7 +99,5 @@
             comments powered by Disqus.
         </a>
     </noscript>
-
-    re
     </body>
 </html>
