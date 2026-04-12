@@ -2867,6 +2867,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #0d6efd;
   --bs-btn-disabled-border-color: #0d6efd;
+
 }
 
 .btn-secondary {
@@ -10834,3 +10835,4 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+

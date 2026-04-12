@@ -6,11 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Cybernetik Einhearjar</title>
+        <title>Cybernetik Einherjar</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Mi CCS personalizado -->
+        <link href="css/custom.css" rel="stylesheet" />
+
     </head>
     <body class = "d-flex flex-column min-vh-100" >
 
@@ -33,13 +36,66 @@
                 <div class="col-lg-5">
                     <h1 class="font-weight-light">¡Hackea tu paso a la salida! </h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ipsum lacus, pellentesque sed viverra sit amet, luctus a dui. Nam enim nibh, luctus quis urna vitae, dictum tempus metus. Etiam tincidunt eu ligula a feugiat. Ut luctus nisl sed justo malesuada, in tincidunt nunc rutrum. Nulla semper sed ante vitae rhoncus.</p>
-                    <a class="btn btn-primary" href="#!">¡Quiero ayudar!</a>
+
+                    <!-- BARRA DE PROGRESO AQUÍ -->
+                    <div class="progress-bg">
+                        <div id="progress-bar" class ="text-center"> road to 100€</div>
+                    </div>
+
+                    <!-- boton de donación-->
+                    <div class="text-end">
+                        <a class="btn btn-primary" href="#!" onclick="increaseFill()">¡Quiero ayudar!</a>
+                    </div>
+
+
                 </div>
             </div>
             <!-- Call to Action-->
             <div class="card text-white bg-secondary my-5 py-4 text-center">
                 <div class="card-body"><p class="text-white m-0">¡Lucha, explora y evoluciona: apoya Cybernetik Einherjar!</p></div>
             </div>
+
+            <!-- SECCIÓN DE CONTENIDO DEL JEUGO -->
+            <div class="row gx-4 gx-lg-5 my-5">
+
+                <!-- LADO IZQUIERDO: ÍNDICE (1/4) -->
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div id="sticky-index" class="list-group sticky-top" style="top: 20px;">
+                        <a class="list-group-item list-group-item-action active" href="#historia">Historia</a>
+                        <a class="list-group-item list-group-item-action" href="#mecanicas">Mecánicas de Juego</a>
+                        <a class="list-group-item list-group-item-action" href="#recompensas">Recompensas</a>
+                        <a class="list-group-item list-group-item-action" href="#equipo">El Equipo</a>
+                    </div>
+                </div>
+
+                <!-- LADO DERECHO: TEXTO (3/4) -->
+                <div class="col-lg-9">
+                    <div data-bs-spy="scroll" data-bs-target="#sticky-index" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+                        <section id="historia" class="mb-5">
+                            <h2 class="fw-bold">Historia</h2>
+                            <p>En el año 2099, los Einherjar han despertado... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus nisl sed justo malesuada, in tincidunt nunc rutrum.</p>
+                        </section>
+
+                        <section id="mecanicas" class="mb-5">
+                            <h2 class="fw-bold">Mecánicas de Juego</h2>
+                            <p>Combate rítmico y hackeo en tiempo real. Nam enim nibh, luctus quis urna vitae, dictum tempus metus. Etiam tincidunt eu ligula a feugiat.</p>
+                        </section>
+
+                        <section id="recompensas" class="mb-5">
+                            <h2 class="fw-bold">Recompensas</h2>
+                            <p>Desde acceso anticipado hasta skins exclusivas. Nulla semper sed ante vitae rhoncus. Sed ipsum lacus, pellentesque sed viverra sit amet.</p>
+                        </section>
+
+                        <section id="equipo" class="mb-5">
+                            <h2 class="fw-bold">El Equipo</h2>
+                            <p>Un grupo de desarrolladores apasionados por el cyberpunk. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+
             <!-- Comentarios de DISQUS -->
 
             <div class="container px-4 px-lg-5 my-5">
@@ -59,6 +115,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <!-- Mi JS-->
+        <script src="js/barra_de_progreso.js"></script>
 
     <script>
         /**

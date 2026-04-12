@@ -1,0 +1,57 @@
+/* MI CSS DE LO QUE YO HE IDO AñADIENDO */
+
+/*=========================SECCIÓN: INDEX=================== */
+
+/* Contenedor del fondo (la barra "vacía") */
+.progress-bg {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f0f0f0;
+    height: 30px;
+    /* Borde negro y esquinas redondeadas */
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden; /* Importante para que el azul respete la redondez */
+    margin: 20px auto;
+}
+
+/* El relleno azul que aumenta */
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #007bff; /* Color azul */
+    border-radius: 15px 0 0 15px; /* Redondeado solo a la izquierda inicialmente */
+    transition: width 0.3s ease;
+}
+
+/*========================SECCIÓN: FAQ====================== */
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff;
+    color: #007bff;
+    font-weight: bold;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+
+/*=========================SECCIÓN: ABOUT US=================== */
+.team-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.text-primary {
+    color: #007bff !important;
+}
+

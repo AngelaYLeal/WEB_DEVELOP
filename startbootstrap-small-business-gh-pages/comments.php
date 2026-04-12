@@ -10,10 +10,25 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- Mi CCS personalizado -->
+    <link href="css/custom.css" rel="stylesheet" />
 </head>
+
 <body class = "d-flex flex-column min-vh-100">
-<div id="lCom" class="container-lg border-1"> Leave us a comment!!</div>
+
+<!-- NAVBAR -->
+<?php include 'navbar.php'; ?>
+
+<main class="container px-4 px-lg-5 mt-5 py-5 flex-grow-1">
+
+    <h2 class="mb-4">Comunidad y Opiniones</h2> <!-- Un título opcional para mejorar la estética -->
+
     <div id="disqus_thread"></div>
+
+</main>
+
+<?php include 'footer.php'; ?>
+
     <script>
         /**
          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT
