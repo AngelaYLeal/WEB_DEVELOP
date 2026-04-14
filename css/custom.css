@@ -15,11 +15,17 @@
     font-style: normal;
     font-display: swap;
 }
+
+/*=========================   NAVBAR    =================================================*/
+
+
+.nav-link{
+    font-family: 'Metroidvenia', monospace;
+}
 /*=========================SECCIÓN: INDEX=================== */
 #body {
     background-image: url("/assets/img/bg/fondoedit.png") ;
     background-size: contain;
-    background-repeat: no-repeat;
 }
 
 
@@ -29,8 +35,8 @@
     max-width: 600px;
     background-color: #f0f0f0;
     height: 30px;
-    border: 2px solid black;
-    border-radius: 15px;
+    border: 6px solid #000000;
+    border-radius: 10px;
     overflow: hidden;
     margin: 20px auto;
 }
@@ -39,32 +45,28 @@
 #progress-bar {
     width: 0%;
     height: 100%;
-    background-color: #007bff;
-    border-radius: 15px 0 0 15px;
+    background-color: #000000;
+
     transition: width 0.3s ease;
 }
 
 /* =====El reloj de cuenta atrás============= */
 #clock-tittle{
-    color: white;
+    color: #ffffff;
+    font-family:'Metroidvenia' , monospace;
 }
 .time-node {
     font-family:'Doctor Glitch' , monospace;
     /*background: rgba(0, 0, 0, 0.8);*/
     color: #4af29f;
     padding: 10px 15px;
-    /* border-radius: 5px;
-     border: 1px solid #00ff41;
-     min-width: 80px;
-     box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);*/
  }
 
-.time-node small{
-    font-family:'Metroidvenia' , monospace;
-}
+
 .separator{
     color: #ffffff;
     margin-bottom: 15px;
+
 }
 
 /*===============VIDEO PROMOCIONAL============================ */
@@ -79,8 +81,8 @@
     align-items: center;
 
 
-    border: 2px solid #39ff14;
-    box-shadow: 0 0 10px #39ff14, inset 0 0 5px #39ff14;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff, inset 0 0 5px #ffffff;
 
 
     animation: neon-glow 2s infinite alternate;
@@ -88,12 +90,12 @@
 
 @keyframes neon-glow {
     0% {
-        box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, inset 0 0 2px #39ff14;
-        border-color: #32cd32;
+        box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, inset 0 0 2px #ffffff;
+        border-color: #ffffff;
     }
     100% {
-        box-shadow: 0 0 15px #39ff14, 0 0 30px #39ff14, inset 0 0 8px #39ff14;
-        border-color: #39ff14;
+        box-shadow: 0 0 15px #ffffff, 0 0 30px #ffffff, inset 0 0 8px #ffffff;
+        border-color: #ffffff;
     }
 }
 
@@ -102,6 +104,27 @@
     display: block;
     border-radius: 6px;
 }
+/*================= SECCIóN HERO====================*/
+#tituloJuego{
+    font-family: Metroidvenia, monospace;
+    color: #000000;
+    text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
+
+}
+
+#lema {
+    font-family: 'Metroidvenia' , monospace;
+    color: white;
+}
+
 
  /*========================SECCIÓN: FAQ====================== */
 .accordion-button:not(.collapsed) {

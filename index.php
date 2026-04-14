@@ -23,9 +23,15 @@
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
 
+            <!-- LEMA -->
+            <div class="text-center mt-5">
+                <p class="display-2" id="tituloJuego">Cybernetik Einhearjar</p>
+                <p class="display-6" id="lema">¡Hackea tu paso a la salida! </p>
+            </div>
+
             <!--reloj de cuenta atrás-->
             <div class="countdown-section mb-4 text-center">
-                <h4 class="text-uppercase fw-bold" id="clock-tittle">Sincronización final en:</h4>
+                <h3  id="clock-tittle">Sincronización final en:</h3>
 
                 <div id="countdown" class="d-flex justify-content-center gap-3">
                     <div class="time-node">
@@ -56,10 +62,9 @@
                 </div>
             </div>
 
-
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <!-- VIDEO PROMOCIONAL-->
-                <div class="col-lg-7">
+                <div class="col-lg-8">
                     <div class="neon-wrapper mb-4 mb-lg-0">
                         <video class="w-100 rounded mb-4 mb-lg-0"
                                controls
@@ -70,18 +75,17 @@
                         </video>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <h1 class="font-weight-light">¡Hackea tu paso a la salida! </h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ipsum lacus, pellentesque sed viverra sit amet, luctus a dui. Nam enim nibh, luctus quis urna vitae, dictum tempus metus. Etiam tincidunt eu ligula a feugiat. Ut luctus nisl sed justo malesuada, in tincidunt nunc rutrum. Nulla semper sed ante vitae rhoncus.</p>
+                <div class="col-lg-4">
+                    <p>Ayúdanos a desarrollar nuestro primer metroidvania</p>
 
                     <!-- BARRA DE PROGRESO AQUÍ -->
                     <div class="progress-bg">
-                        <div id="progress-bar" class ="text-center"> road to 100€</div>
+                        <div id="progress-bar"></div>
                     </div>
 
                     <!-- boton de donación-->
-                    <div class="text-end">
-                        <a class="btn btn-primary" href="#!" onclick="increaseFill()">¡Quiero ayudar!</a>
+                    <div class="text-start">
+                        <a class="btn btn-primary  " href="#!" onclick="increaseFill()">¡Quiero ayudar!</a>
                     </div>
 
 
