@@ -1,0 +1,101 @@
+/* MI CSS DE LO QUE YO HE IDO AñADIENDO */
+
+@font-face {
+    font-family: 'Metroidvenia';
+    src: url('/assets/fonts/metroidvenia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Doctor Glitch';
+    src: url('/assets/fonts/Doctor Glitch.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*=========================SECCIÓN: INDEX=================== */
+#body {
+    background-image: url("/assets/img/bg/bg_cyber_gemini.png") ;
+
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Contenedor del fondo (la barra "vacía") */
+.progress-bg {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f0f0f0;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+/* El relleno azul que aumenta */
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 15px 0 0 15px;
+    transition: width 0.3s ease;
+}
+
+/* =====El reloj de cuenta atrás============= */
+#clock-tittle{
+    color: white;
+}
+.time-node {
+    font-family:'Doctor Glitch' , monospace;
+    /*background: rgba(0, 0, 0, 0.8);*/
+    color: #4af29f;
+    padding: 10px 15px;
+    /* border-radius: 5px;
+     border: 1px solid #00ff41;
+     min-width: 80px;
+     box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);*/
+ }
+
+.time-node small{
+    font-family:'Metroidvenia' , monospace;
+}
+.separator{
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+ /*========================SECCIÓN: FAQ====================== */
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff;
+    color: #007bff;
+    font-weight: bold;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+
+/*=========================SECCIÓN: ABOUT US=================== */
+.team-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.text-primary {
+    color: #007bff !important;
+}
+

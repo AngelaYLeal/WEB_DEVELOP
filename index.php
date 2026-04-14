@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,7 +14,7 @@
         <link href="css/custom.css" rel="stylesheet" />
 
     </head>
-    <body class = "d-flex flex-column min-vh-100" >
+    <body class = "d-flex flex-column min-vh-100"  id="body">
 
     <!-- NAVBAR -->
     <?php include 'navbar.php'; ?>
@@ -23,6 +22,41 @@
         <!-- Page Content-->
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
+
+            <!--reloj de cuenta atrás-->
+            <div class="countdown-section mb-4 text-center">
+                <h4 class="text-uppercase fw-bold" id="clock-tittle">Sincronización final en:</h4>
+
+                <div id="countdown" class="d-flex justify-content-center gap-3">
+                    <div class="time-node">
+                        <span id="days" class="display-6 fw-bold">00</span>
+                        <div class="small">Días</div>
+                    </div>
+
+                    <span class="separator display-6 text-uppercase fw-bold mb-2 text-center">:</span>
+
+                    <div class="time-node">
+                        <span id="hours" class="display-6 fw-bold">00</span>
+                        <div class="small">Horas</div>
+                    </div>
+
+                    <span class="separator display-6 text-uppercase fw-bold mb-2 text-center">:</span>
+
+                    <div class="time-node">
+                        <span id="minutes" class="display-6 fw-bold">00</span>
+                        <div class="small">Min</div>
+                    </div>
+
+                    <span class="separator display-6 text-uppercase fw-bold mb-2 text-center">:</span>
+
+                    <div class="time-node">
+                        <span id="seconds" class="display-6 fw-bold">00</span>
+                        <div class="small">Seg</div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <div class="col-lg-7">
                     <video class="w-100 rounded mb-4 mb-lg-0"
@@ -111,13 +145,14 @@
         <!-- Footer-->
         <?php include 'footer.php'; ?>
 
-        <!-- Bootstrap core JS-->
+    <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+    <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
 
-        <!-- Mi JS-->
+    <!-- Mi JS-->
         <script src="js/barra_de_progreso.js"></script>
+        <script src="js/clock_counter.js"></script>
 
     <script>
         /**
