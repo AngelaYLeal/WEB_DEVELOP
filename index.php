@@ -58,14 +58,17 @@
 
 
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <!-- VIDEO PROMOCIONAL-->
                 <div class="col-lg-7">
-                    <video class="w-100 rounded mb-4 mb-lg-0"
-                           controls
-                           preload="metadata"
-                           poster="assets/640x360image.jpg">
+                    <div class="neon-wrapper mb-4 mb-lg-0">
+                        <video class="w-100 rounded mb-4 mb-lg-0"
+                               controls
+                               preload="metadata"
+                               poster="assets/640x360image.jpg">
 
-                        <source src="assets/videoprueba.mp4" type="video/mp4">
-                    </video>
+                            <source src="assets/videoprueba.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <h1 class="font-weight-light">¡Hackea tu paso a la salida! </h1>

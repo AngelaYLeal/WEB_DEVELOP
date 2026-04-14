@@ -17,9 +17,8 @@
 }
 /*=========================SECCIÓN: INDEX=================== */
 #body {
-    background-image: url("/assets/img/bg/bg_cyber_gemini.png") ;
-
-    background-position: center;
+    background-image: url("/assets/img/bg/fondoedit.png") ;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -66,6 +65,42 @@
 .separator{
     color: #ffffff;
     margin-bottom: 15px;
+}
+
+/*===============VIDEO PROMOCIONAL============================ */
+
+.neon-wrapper {
+    position: relative;
+    padding: 4px;
+    background: #000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 2px solid #39ff14;
+    box-shadow: 0 0 10px #39ff14, inset 0 0 5px #39ff14;
+
+
+    animation: neon-glow 2s infinite alternate;
+}
+
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, inset 0 0 2px #39ff14;
+        border-color: #32cd32;
+    }
+    100% {
+        box-shadow: 0 0 15px #39ff14, 0 0 30px #39ff14, inset 0 0 8px #39ff14;
+        border-color: #39ff14;
+    }
+}
+
+
+.neon-wrapper video {
+    display: block;
+    border-radius: 6px;
 }
 
  /*========================SECCIÓN: FAQ====================== */
