@@ -208,7 +208,19 @@
     transform: translateY(-2px);
 }
 
+/*=========================  SECCIÓN: TEXTO Y COMENTARIOS    ============================= */
 
+#desarrollo{
+    color: white;
+    background: rgb(107 133 117 / 71%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.index-elem{
+    color: white;
+    background-color: transparent;
+}
 
 /*========================SECCIÓN: FAQ====================== */
 .accordion-button:not(.collapsed) {

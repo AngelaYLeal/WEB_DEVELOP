@@ -62,7 +62,8 @@
                 </div>
             </div>
 
-            <div class="row gx-4 gx-lg-5 align-items-stretch my-5">
+            <div class="row gx-4 gx-lg-5  my-5">
+
                 <!-- VIDEO PROMOCIONAL-->
                 <div class="col-lg-8">
                     <div class="neon-wrapper mb-4 mb-lg-0">
@@ -76,9 +77,8 @@
                     </div>
                 </div>
 
-
-
-                <div class="col-lg-4 justify-content-between">
+                <!-- SECCION DE LA DERECHA DEL VIDEO -->
+                <div class=" col-lg-4  ">
                     <div class="cyber-panel mb-4">
                         <div class="d-flex justify-content-between align-items-end mb-2">
                             <div class="text-white small fw-bold lh-1 text-uppercase align-self-start">
@@ -127,15 +127,15 @@
             </div>
 
             <!-- SECCIÓN DE CONTENIDO DEL JEUGO -->
-            <div class="row gx-4 gx-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 my-5" id="desarrollo">
 
                 <!-- LADO IZQUIERDO: ÍNDICE (1/4) -->
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div id="sticky-index" class="list-group sticky-top" style="top: 20px;">
-                        <a class="list-group-item list-group-item-action active" href="#historia">Historia</a>
-                        <a class="list-group-item list-group-item-action" href="#mecanicas">Mecánicas de Juego</a>
-                        <a class="list-group-item list-group-item-action" href="#recompensas">Recompensas</a>
-                        <a class="list-group-item list-group-item-action" href="#equipo">El Equipo</a>
+                <div class="col-lg-3 d-none d-lg-block" >
+                    <div id="sticky-index" class="list-group sticky-top  fw-bold" style="top: 20px;">
+                        <a  class=" index-elem list-group-item list-group-item-action active" href="#historia">Historia</a>
+                        <a  class=" index-elem list-group-item list-group-item-action" href="#mecanicas">Mecánicas de Juego</a>
+                        <a  class=" index-elem list-group-item list-group-item-action" href="#recompensas">Recompensas</a>
+                        <a  class=" index-elem list-group-item list-group-item-action" href="#equipo">El Equipo</a>
                     </div>
                 </div>
 
