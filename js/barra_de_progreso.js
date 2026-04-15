@@ -1,19 +1,33 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const bar = document.getElementById('progress-bar');
 
-    let savedWidth = localStorage.getItem('progresoBarra');
-    let currentWidth = savedWidth ? parseInt(savedWidth) : 0;
+document.addEventListener("DOMContentLoaded", function() {
 
-    bar.style.width = currentWidth + '%';
+    const maxAmount = 5000;
 
-    window.increaseFill = function() {
-        if (currentWidth < 100) {
-            currentWidth += 5;
-            if (currentWidth > 100) currentWidth = 100;
+    const amountElement = document.getElementById('current-amount');
 
-            bar.style.width = currentWidth + '%';
+    if (amountElement) {
 
-            localStorage.setItem('progresoBarra', currentWidth);
-        }
-    };
+        let currentAmount = parseFloat(amountElement.innerText.replace(',', ''));
+
+        let percentage = (currentAmount / maxAmount) * 100;
+
+        if (percentage > 100) percentage = 100;
+
+        const progressBar = document.getElementById('funding-bar');
+
+        setTimeout(() => {
+            progressBar.style.width = percentage + '%';
+        }, 300);
+
+        amountElement.innerText = currentAmount.toLocaleString('es-ES', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        });
+    }
 });
+
+//Simular un aumento al hacer clic en donar????
+function increaseFill() {
+    // Aquí iría tu lógica real, pero para la demo visual:
+    console.log("Iniciando proceso de donación...");
+}

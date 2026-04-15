@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="row gx-4 gx-lg-5 align-items-stretch my-5">
                 <!-- VIDEO PROMOCIONAL-->
                 <div class="col-lg-8">
                     <div class="neon-wrapper mb-4 mb-lg-0">
@@ -75,19 +75,49 @@
                         </video>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <p>Ayúdanos a desarrollar nuestro primer metroidvania</p>
 
-                    <!-- BARRA DE PROGRESO AQUÍ -->
-                    <div class="progress-bg">
-                        <div id="progress-bar"></div>
+
+
+                <div class="col-lg-4 justify-content-between">
+                    <div class="cyber-panel mb-4">
+                        <div class="d-flex justify-content-between align-items-end mb-2">
+                            <div class="text-white small fw-bold lh-1 text-uppercase align-self-start">
+                                Funding Progress<br>
+                                <span class="text-white-50 fs-075 " >Financiación del Proyecto</span>
+                            </div>
+                            <div class="cyber-amount-box text-neon">
+                                RECAUDADO: <span id="current-amount">3210.00</span> €
+                            </div>
+                        </div>
+
+                        <div class="cyber-progress-bg mt-2">
+                            <div class="cyber-progress-fill" id="funding-bar"></div>
+                            <div class="cyber-progress-glow" id="funding-glow"></div>
+                        </div>
+
+                        <div class="d-flex justify-content-between text-white-50 mt-1 small fs-07" >
+                            <span>0€</span>
+                            <span>1000€</span>
+                            <span>2000€</span>
+                            <span>3000€</span>
+                            <span>4000€</span>
+                            <span>5000€</span>
+                        </div>
                     </div>
+
+                    <!-- NUMERO DE BACKERS -->
+                    <div class="cyber-backers-box mb-4 text-center">
+                        <div class="cyber-backers-number text-neon text-start " id="backers-count">124</div>
+                        <div class="cyber-backers-text text-white text-uppercase small text-start">personas nos respaldan</div></div>
+
 
                     <!-- boton de donación-->
-                    <div class="text-start">
-                        <a class="btn btn-primary  " href="#!" onclick="increaseFill()">¡Quiero ayudar!</a>
+                    <div class="mb-4">
+                        <a href="campaña.php" class="cyber-btn w-100 d-block text-center text-decoration-none" onclick="increaseFill()">
+                            <span class="d-block small text-white-50">¡QUIERO AYUDAR!</span>
+                            <span class="d-block fw-bold fs-5 text-white">DONAR AHORA</span>
+                        </a>
                     </div>
-
 
                 </div>
             </div>

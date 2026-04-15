@@ -15,40 +15,46 @@
     font-style: normal;
     font-display: swap;
 }
-
+:root {
+    --neon-green: #00ff9d;
+    --neon-green-dim: rgba(0, 255, 157, 0.2);
+    --panel-bg: rgba(20, 25, 22, 0.85);
+    --panel-border: #2a3b32;
+}
 /*=========================   NAVBAR    =================================================*/
 
 
 .nav-link{
     font-family: 'Metroidvenia', monospace;
 }
-/*=========================SECCIÓN: INDEX=================== */
+
+/*=========================  INDEX  =============================== */
 #body {
     background-image: url("/assets/img/bg/fondoedit.png") ;
     background-size: contain;
 }
 
 
-/* Contenedor del fondo (la barra "vacía") */
-.progress-bg {
-    width: 100%;
-    max-width: 600px;
-    background-color: #f0f0f0;
-    height: 30px;
-    border: 6px solid #000000;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 20px auto;
+#tituloJuego{
+    font-family: Metroidvenia, monospace;
+    color: #000000;
+    text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
+
 }
 
-/* El relleno azul que aumenta */
-#progress-bar {
-    width: 0%;
-    height: 100%;
-    background-color: #000000;
-
-    transition: width 0.3s ease;
+#lema {
+    font-family: 'Metroidvenia' , monospace;
+    color: white;
 }
+
 
 /* =====El reloj de cuenta atrás============= */
 #clock-tittle{
@@ -68,8 +74,9 @@
     margin-bottom: 15px;
 
 }
+/*================= SECCIóN HERO====================*/
 
-/*===============VIDEO PROMOCIONAL============================ */
+/*---------IDEO PROMOCIONAL------- */
 
 .neon-wrapper {
     position: relative;
@@ -104,29 +111,106 @@
     display: block;
     border-radius: 6px;
 }
-/*================= SECCIóN HERO====================*/
-#tituloJuego{
-    font-family: Metroidvenia, monospace;
-    color: #000000;
-    text-shadow:
-            0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 21px #fff,
-            0 0 42px #0fa,
-            0 0 82px #0fa,
-            0 0 92px #0fa,
-            0 0 102px #0fa,
-            0 0 151px #0fa;
 
+
+/* ========= SECCIÓN DONACIÓN ============*/
+
+.fs-075 {
+    font-size: 0.75rem;
 }
 
-#lema {
-    font-family: 'Metroidvenia' , monospace;
-    color: white;
+.fs-07{
+    font-size: 0.7rem;
 }
 
 
- /*========================SECCIÓN: FAQ====================== */
+.text-neon {
+    color: var(--neon-green);
+    text-shadow: 0 0 5px var(--neon-green-dim);
+}
+
+/* Paneles */
+.cyber-panel {
+    background-color: var(--panel-bg);
+    border: 2px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.8), 0 4px 10px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+/* Caja de cantidad recaudada */
+.cyber-amount-box {
+    border: 1px solid var(--neon-green);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background: rgba(0, 255, 157, 0.05);
+    box-shadow: 0 0 8px var(--neon-green-dim);
+}
+
+/* Barra de progreso */
+.cyber-progress-bg {
+    width: 100%;
+    height: 12px;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cyber-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #008f58 0%, var(--neon-green) 100%);
+    width: 0%; /* Se controla con JS */
+    transition: width 1s ease-in-out;
+    border-radius: 6px;
+    box-shadow: 0 0 10px var(--neon-green);
+}
+
+/*-------Sección de BACKERS --------------*/
+
+/* Caja de número de patrocinadores */
+.cyber-backers-box {
+    padding: 15px 10px;
+    transition: all 0.3s ease;
+}
+
+.cyber-backers-number {
+    font-family: Arial, monospace;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.cyber-backers-text {
+    letter-spacing: 2px;
+    font-weight:550;
+}
+
+/*======== BOTON DE DONACIÓN =====================*/
+
+.cyber-btn {
+    background-color: var(--panel-bg);
+    border: 2px solid var(--neon-green);
+    border-radius: 8px;
+    padding: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px var(--neon-green-dim), inset 0 0 10px var(--neon-green-dim);
+}
+
+.cyber-btn:hover {
+    background-color: rgba(0, 255, 157, 0.1);
+    box-shadow: 0 0 20px var(--neon-green-dim), inset 0 0 20px var(--neon-green-dim);
+    transform: translateY(-2px);
+}
+
+
+
+/*========================SECCIÓN: FAQ====================== */
 .accordion-button:not(.collapsed) {
     background-color: #e7f1ff;
     color: #007bff;
