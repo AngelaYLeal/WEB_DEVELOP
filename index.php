@@ -122,26 +122,24 @@
                 </div>
             </div>
             <!-- Call to Action-->
-            <div class="card text-white bg-secondary my-5 py-4 text-center">
-                <div class="card-body"><p class="text-white m-0">¡Lucha, explora y evoluciona: apoya Cybernetik Einherjar!</p></div>
+            <div class="card text-white my-5 py-4 text-center" id="call-Action">
+                <div class="card-body"><p class="text-white m-0 h3">¡Lucha, explora y evoluciona: apoya Cybernetik Einherjar!</p></div>
             </div>
 
             <!-- SECCIÓN DE CONTENIDO DEL JEUGO -->
             <div class="row gx-4 gx-lg-5 my-5" id="desarrollo">
 
-                <!-- LADO IZQUIERDO: ÍNDICE (1/4) -->
-                <div class="col-lg-3 d-none d-lg-block" >
-                    <div id="sticky-index" class="list-group sticky-top  fw-bold" style="top: 20px;">
-                        <a  class=" index-elem list-group-item list-group-item-action active" href="#historia">Historia</a>
-                        <a  class=" index-elem list-group-item list-group-item-action" href="#mecanicas">Mecánicas de Juego</a>
-                        <a  class=" index-elem list-group-item list-group-item-action" href="#recompensas">Recompensas</a>
-                        <a  class=" index-elem list-group-item list-group-item-action" href="#equipo">El Equipo</a>
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div id="sticky-index" class="list-group fw-bold">
+                        <a class="index-elem list-group-item list-group-item-action active" href="#historia">Historia</a>
+                        <a class="index-elem list-group-item list-group-item-action" href="#mecanicas">Mecánicas de Juego</a>
+                        <a class="index-elem list-group-item list-group-item-action" href="#recompensas">Recompensas</a>
+                        <a class="index-elem list-group-item list-group-item-action" href="#equipo">El Equipo</a>
                     </div>
                 </div>
 
-                <!-- LADO DERECHO: TEXTO (3/4) -->
                 <div class="col-lg-9">
-                    <div data-bs-spy="scroll" data-bs-target="#sticky-index" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                    <div data-bs-spy="scroll" data-bs-target="#sticky-index" data-bs-offset="0" class="scrollspy-example pe-3" tabindex="0" style="max-height: 400px; overflow-y: auto;">
 
                         <section id="historia" class="mb-5">
                             <h2 class="fw-bold">Historia</h2>

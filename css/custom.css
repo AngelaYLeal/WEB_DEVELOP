@@ -21,6 +21,40 @@
     --panel-bg: rgba(20, 25, 22, 0.85);
     --panel-border: #2a3b32;
 }
+
+
+/*========= MIS FONDOS ============*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo para la parte superior */
+.bg-panel-cyberpunk {
+    /* Usamos la imagen original (asegúrate de la ruta correcta) */
+    background-image: url('assets/img/bg/fondoedit.png');
+    background-repeat: repeat;
+    background-position: top;
+    /* Un color de seguridad oscuro por si la imagen no carga */
+    background-color: #1a1a1a;
+}
+
+/* SECCIÓN DE TRANSICIÓN */
+.bg-transition-cyberpunk {
+    /* USAMOS LA IMAGEN GENERADA (image_1.png) */
+    /* Esta imagen tiene la parte superior metálica y la inferior degradada al color sólido */
+    background-image: url('assets/img/bg/fondo-con-transición.png');
+    background-repeat: repeat-x; /* Solo se repite horizontalmente */
+    background-position: bottom; /* Se alinea abajo para la transición */
+    background-size: cover; /* O adjusta según necesites */
+    background-color: #3a3a3a; /* El color sólido final */
+}
+
+/* Fondo para la parte inferior (a partir del Call to Action) */
+.bg-solid-dark {
+    background-color: #3a3a3a; /* El color sólido final */
+}
 /*=========================   NAVBAR    =================================================*/
 
 
@@ -29,10 +63,6 @@
 }
 
 /*=========================  INDEX  =============================== */
-#body {
-    background-image: url("/assets/img/bg/fondoedit.png") ;
-    background-size: contain;
-}
 
 
 #tituloJuego{
@@ -222,6 +252,11 @@
     background-color: transparent;
 }
 
+
+#call-Action{
+    background-color: var(--panel-bg);
+    font-family: 'Metroidvenia', monospace;
+}
 /*========================SECCIÓN: FAQ====================== */
 .accordion-button:not(.collapsed) {
     background-color: #e7f1ff;
@@ -253,3 +288,8 @@
     color: #007bff !important;
 }
 
+/*=========================SECCIÓN: DISQUS=================== */
+
+#disqus_thread{
+    background-color: white;
+}
